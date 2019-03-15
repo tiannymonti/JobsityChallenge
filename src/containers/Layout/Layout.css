@@ -1,0 +1,21 @@
+.Logo{
+    font-size: 175%;
+    text-align: center;
+    color: var(--main-color);
+    line-height: 1;
+}
+
+.Header {
+    display: block;
+    width: 100%;
+    padding: 1.75em 0;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--neutral-color);
+}
+
+.Main{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5em;
+    max-width: 50em;
+}

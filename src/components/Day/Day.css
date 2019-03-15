@@ -1,3 +1,64 @@
-.Day{
-    border: 2px solid blue;
+.Cell{
+    position: relative;
+    height: 5em;
+    border-right: 1px solid var(--border-color);
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--neutral-color);
+    transition: 0.25s ease-out;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.Cell:hover {
+    background: var(--bg-color);
+    transition: 0.5s ease-out;
+}
+
+.Last {
+    border-right: none;
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+
+.First{
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+
+.Disabled {
+    color: var(--text-color-light);
+}
+
+.Selected{
+    border-left: 10px solid transparent;
+    border-image: linear-gradient(45deg, #0b58a0 0%,#2872b7 40%);
+    border-image-slice: 1;
+    background: var(--bg-color);
+}
+
+.Icon{
+    font-weight: 700;
+    line-height: 1;
+    color: var(--main-color);
+    opacity: 0;
+    font-size: 4em;
+    position: absolute;
+    top: .1em;
+    right: .1em;
+    transition: .25s ease-out;
+    letter-spacing: -.07em;
+}
+
+.Cell:hover .Icon  {
+    opacity: 0.1;
+    transition: .5s ease-in;
+}
+
+.Cell .Number{
+    position: absolute;
+    font-size: 82.5%;
+    line-height: 1;
+    top: .75em;
+    right: .75em;
+    font-weight: 700;
 }

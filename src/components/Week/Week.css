@@ -1,3 +1,11 @@
 .Week {
-    border: 2px solid red;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: white;
+    font-size: 87%;
+    padding: .3em;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+    background-color: var(--main-color);
+    width: 100.05%;
 }
