@@ -32,7 +32,7 @@ const day = (props) => {
         <Grid key={day}>
           <div
             className={daysClasses}
-            onClick={props.dayClicked}
+            onClick={props.dayClicked(cloneDay)}
           >
             <span className={classes.Number}>{formattedDate}</span>
             <span className={classes.Icon}><Icons>add_alert</Icons></span>

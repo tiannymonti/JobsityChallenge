@@ -13,8 +13,8 @@ class Calendar extends Component {
     };
 
     onDateClickHandler = day => {
-
-    }
+        console.log(day)
+    };
 
     nextMonthHandler =  () => {
         this.setState({
@@ -27,6 +27,8 @@ class Calendar extends Component {
             currentMonth: dateFns.subMonths(this.state.currentMonth, 1)
         });
     }
+
+
 
     render() {
         return (
